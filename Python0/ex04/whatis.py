@@ -1,10 +1,13 @@
 import sys
 
-assert len(sys.argv) >= 2, "more than one argument is provided"
+assert len(sys.argv) <= 2, "more than one argument is provided"
+
+if len(sys.argv) == 1:
+	sys.exit()
 
 check = sys.argv[1]
 
-assert check.isdigit(), "argument is not an integer."
+assert check.lstrip('-').isdigit(), "argument is not an integer."
 
 nombre = int(check)
 if nombre % 2 == 0:
