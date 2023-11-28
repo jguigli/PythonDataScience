@@ -41,6 +41,8 @@ DICT_MORSE = {
 
 def main():
     """Prend une string en argument et l'imprime en morse"""
+
+    sys.tracebacklimit = 0
     assert len(sys.argv) == 2, "the arguments are bad"
     str = sys.argv[1]
 

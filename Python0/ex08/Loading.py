@@ -1,8 +1,8 @@
-import time
 import os
 
 
 def get_terminal_size():
+    """Permet d'obtenir la taille du terminal"""
     try:
         columns, rows = os.get_terminal_size(0)
         return columns, rows
@@ -10,21 +10,27 @@ def get_terminal_size():
         print(OSError)
         return None
 
+
 def ft_tqdm(lst: range) -> None:
+    """Recoit une liste en argument et affiche une barre
+     de progression en fonction du nombre de valeur dans la liste"""
     total = len(lst)
-    start_time = time.time()
     terminal_size = get_terminal_size()
-    row_size = terminal_size[0]
 
     for i, item in enumerate(lst):
         progress = min(1.0, (i + 1) / total)
         percentage = int(progress * 100)
-        bar_length = 100 
-        bar_step = int(progress * 100)
-        bar = "█" * percentage * 2
         counter = f"{i + 1}/{total}"
-        gap_size = terminal_size[0] - len(str(percentage)) - len(counter) - 10
+        gap_size = terminal_size[0] - len(str(percentage)) - len(counter) - 30
+        bar_length = int(progress * gap_size)
+        bar = "█" * bar_length
 
-        print(f"\r{percentage}%|{bar:<{gap_size}}| {i + 1}/{total}", end="", flush=True)
+        percentage_str = f"{percentage}%"
+        bar_str = f"|{bar:<{gap_size}}|"
+        progress_str = f"{i + 1}/{total}"
+
+        output_str = f"{percentage_str}{bar_str} {progress_str}"
+
+        print(f"\r{output_str}", end="", flush=True)
         yield item
     print()

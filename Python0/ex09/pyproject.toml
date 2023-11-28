@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ft_package"
+version = "0.0.1"
+Home-page = "https://github.com/Thegreymago/ft_package"
+authors = [
+  {name="Joel Guigli"},
+  {email="jguigli@42.fr"},
+]
+license = {text = "MIT"}
+description = "A sample test package"
+readme = "README.md"
+requires-python = ">=3.8"

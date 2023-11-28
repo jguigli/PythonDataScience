@@ -5,6 +5,9 @@ import string
 def main():
     """Prend une string et un entier en argument et
      imprime une liste contenant chaque mot de la string superieur a N"""
+
+    sys.tracebacklimit = 0
+
     assert len(sys.argv) <= 3, "the arguments are bad"
 
     S = sys.argv[1]
