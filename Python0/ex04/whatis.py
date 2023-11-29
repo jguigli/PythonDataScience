@@ -9,7 +9,7 @@ if len(sys.argv) == 1:
 
 check = sys.argv[1]
 
-assert check.lstrip('-').isdigit(), "argument is not an integer."
+assert check.lstrip('-').isdigit(), "argument is not an integer"
 
 nombre = int(check)
 if nombre % 2 == 0:

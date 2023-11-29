@@ -36,8 +36,8 @@ def main():
     """Ce programme permet de recevoir un argument en tant que
      string afin de donner des informations sur celle-ci.
       Si aucun argument est donne, le programme lit sur stdin"""
-
     sys.tracebacklimit = 0
+
     assert len(sys.argv) <= 2, "more than one argument is provided"
 
     if len(sys.argv) != 2 or sys.argv[1] is None:

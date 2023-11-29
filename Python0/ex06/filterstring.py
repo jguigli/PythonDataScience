@@ -8,7 +8,7 @@ def main():
 
     sys.tracebacklimit = 0
 
-    assert len(sys.argv) <= 3, "the arguments are bad"
+    assert len(sys.argv) == 3, "the arguments are bad"
 
     S = sys.argv[1]
     N = sys.argv[2]
