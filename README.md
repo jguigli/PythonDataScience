@@ -17,3 +17,8 @@ Lien cours python :
 https://pixees.fr/informatiquelycee/n_site/nsi_prem_pythonSequence.html#:~:text=Il%20n%27est%20pas%20possible,Python%20vous%20renverra%20une%20erreur  
 
 https://gayerie.dev/docs/python/python3/introduction.html  
+
+Paquet manquant ordi 42 :
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+
