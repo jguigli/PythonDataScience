@@ -2,7 +2,7 @@ import numpy as np
 
 
 def slice_me(family: list, start: int, end: int) -> list:
-    """DOC HERE"""
+    """Slice list with numpy operation and returns the sliced list"""
     if not isinstance(family, list):
         raise TypeError("family must be a list")
     if not isinstance(start, int) and not isinstance(end, int):
@@ -13,7 +13,6 @@ def slice_me(family: list, start: int, end: int) -> list:
     for sub in family:
         if (balise != len(sub)):
             raise TypeError("Sublists don't have the same size")
-
 
     arr = np.array(family)
     print("My shape is :", arr.shape)
