@@ -7,5 +7,5 @@ def load(path: str) -> pd.DataFrame:
         df = pd.read_csv(path)
         return df
     except Exception as e:
-        print(f"Error loading the image: {str(e)}")
+        print(f"Error handling: {str(e)}")
         return
