@@ -12,7 +12,7 @@ def ft_invert(array) -> np.ndarray:
 
 
 def ft_red(array) -> np.ndarray:
-    """Modify the color of the image received only with red RGB."""
+    """Modify the color of the image received with only red RGB."""
     pixel_data = np.copy(array)
     pixel_data[:, :, 1] = 0
     pixel_data[:, :, 2] = 0
@@ -22,7 +22,7 @@ def ft_red(array) -> np.ndarray:
 
 
 def ft_green(array) -> np.ndarray:
-    """Modify the color of the image received only with green RGB."""
+    """Modify the color of the image received with only green RGB."""
     pixel_data = np.copy(array)
     pixel_data[:, :, 0] = 0
     pixel_data[:, :, 2] = 0
@@ -32,7 +32,7 @@ def ft_green(array) -> np.ndarray:
 
 
 def ft_blue(array) -> np.ndarray:
-    """Modify the color of the image received only with blue RGB."""
+    """Modify the color of the image received with only blue RGB."""
     pixel_data = np.copy(array)
     pixel_data[:, :, 0] = 0
     pixel_data[:, :, 1] = 0

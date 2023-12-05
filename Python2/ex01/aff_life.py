@@ -8,6 +8,7 @@ def main():
     try:
         data = load("life_expectancy_years.csv")
         # Code pour recuperer les informations France
+        data_france = pd.series("")
 
         ax = df.plot(kind='bar', x='Year', y='Life expectancy', legend=True)
         ax.set_ylabel("France Life expectancy Projections")
