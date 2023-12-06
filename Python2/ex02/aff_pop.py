@@ -4,19 +4,19 @@ import pandas as pd
 
 
 def main():
-    """Get data csv and display a graph about life population in France and Belgium"""
+    """Get data csv and display a graph about population in France and China betzeen 1800 and 2050"""
     try:
-        data = load("life_expectancy_years.csv")
-        data_france = data.loc[data['country'] == 'France']
-        print()
+        data = load("population_total.csv")
+        # data_france_china = data.loc[data['country'].isin(['France', 'China'])]
+        # print(data_france_china)
 
-        years = data_france.columns[1:].values.astype('int')
-        life_expectancy = data_france.iloc[0, 1:].values
+        # years = data_france_china[(data_france_china.columns.astype(int) <= 2050)]
+        # population = data_france_china.iloc[0:1, 1:].values
 
-        # plt.plot(years, life_expectancy, linestyle='-')
-        # plt.title('France Life expectancy Projections')
-        # plt.xlabel('Years')
-        # plt.ylabel('Life excpectancy')
+        # plt.plot(years, population, linestyle='-')
+        # plt.title('Population Projections')
+        # plt.xlabel('Year')
+        # plt.ylabel('Population')
         # plt.show()
     except Exception as e:
         print(f"Error handling: {str(e)}")

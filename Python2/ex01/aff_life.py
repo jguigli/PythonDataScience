@@ -14,7 +14,7 @@ def main():
 
         plt.plot(years, life_expectancy, linestyle='-')
         plt.title('France Life expectancy Projections')
-        plt.xlabel('Years')
+        plt.xlabel('Year')
         plt.ylabel('Life excpectancy')
         plt.show()
     except Exception as e:
