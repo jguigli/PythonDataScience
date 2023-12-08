@@ -1,6 +1,5 @@
 from load_csv import load
 import matplotlib.pyplot as plt
-import pandas as pd
 
 
 def main():
