@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def main():
-    """Get data csv and display a graph about life expectancy in France"""
+    """Load data csv and display a graph about life expectancy in France"""
     try:
         data = load("life_expectancy_years.csv")
         data_france = data.loc[data['country'] == 'France']
