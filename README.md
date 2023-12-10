@@ -2,7 +2,8 @@
 
 Pour flake8:
 
-	export PATH=$PATH:/mnt/nfs/homes/jguigli/.local/bin (ordi 42)
+	Ordi 42 :		export PATH=$PATH:/mnt/nfs/homes/jguigli/.local/bin
+	Ordi Maison :	export PATH=$PATH:/home/joel/.local/bin
 
 Paquet manquant ordi 42 :
 

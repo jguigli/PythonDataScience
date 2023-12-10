@@ -29,11 +29,8 @@ def main():
         plt.xticks(range(1800, 2051, 40))
         plt.xlim(1800, 2050)
 
-        ytick_positions = [20000000, 40000000, 60000000]
-        plt.yticks(
-            ytick_positions,
-            [f"{int(value / 1e6)}M" for value in ytick_positions]
-            )
+        ytick_p = [20000000, 40000000, 60000000]
+        plt.yticks(ytick_p, [f"{int(value / 1e6)}M" for value in ytick_p])
 
         plt.title('Population Projections')
         plt.xlabel('Year')
