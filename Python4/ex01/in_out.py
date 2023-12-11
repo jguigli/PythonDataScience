@@ -1,17 +1,17 @@
 def square(x: int | float) -> int | float:
-    """DOC"""
+    """Calculate the square of a number."""
     return x ** 2
 
 def pow(x: int | float) -> int | float:
-    """DOC"""
+    """Calculate the power of a number to itself."""
     return x ** x
 
 
 def outer(x: int | float, function) -> object:
-    """DOC"""
+    """Create a closure that applies a function to an internal variable."""
     count = x
     def inner() -> float:
-        """DOC"""
+        """Apply the specified function to the internal variable."""
         nonlocal count
         result = function(count)
         count = result
