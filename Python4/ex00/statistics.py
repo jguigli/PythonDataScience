@@ -1,5 +1,6 @@
 def ft_statistics(*args: any, **kwargs: any) -> None:
-    """DOC HERE"""
+    """Calculates statistical measures (mean, median, quartile, std, var)
+     based on the provided values."""
     try:
         if not args:
             raise ValueError("At least one value must be provided.")
@@ -11,7 +12,7 @@ def ft_statistics(*args: any, **kwargs: any) -> None:
         s_diff = [(element - mean) ** 2 for element in args]
         var = sum(s_diff) / len(args)
         std = var ** 0.5
-    
+
         if 'mean' in kwargs.values():
             print(f"mean : {mean}")
 
