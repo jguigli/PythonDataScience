@@ -11,4 +11,5 @@ def ft_load(path: str) -> np.ndarray:
         print(f"The shape of image is : {pixel_data.shape}")
     except Exception as e:
         print(f"Error loading the image: {str(e)}")
+        return
     return pixel_data
